@@ -1,0 +1,75 @@
+*{
+    font-family: "Audiowide", sans-serif;
+}
+
+nav{
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    height: 50px;
+    width: 100%;
+}
+
+nav *{
+    flex-grow: 1;
+    border: none;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 25px;
+    background: linear-gradient(to bottom, white, grey);
+}
+
+body{
+    margin: 0;
+}
+
+.rotating-wrapper {
+    perspective: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+  }
+  
+  .rotating-card {
+    position: relative;
+    width: max-content;
+    transform-style: preserve-3d;
+    animation: spin 6s linear infinite;
+    height: 100%;
+  }
+  
+  .side {
+    position: absolute;
+    left: 0;
+    right: 0;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    white-space: nowrap;
+    transform-origin: center;
+    width: 100%;
+  }
+  
+  .front {
+    transform: rotateY(0deg);
+  }
+  
+  .back {
+    transform: rotateY(180deg);
+  }
+  
+  @keyframes spin {
+    from {
+      transform: rotateY(0deg);
+    }
+    to {
+      transform: rotateY(360deg);
+    }
+  }

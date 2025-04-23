@@ -102,6 +102,10 @@ body{
     height: 100%;
 }
 
+img{
+  border-radius: 10px;
+}
+
 .img-p_paragraph{
   display: flex;
   justify-content: center;
@@ -119,7 +123,7 @@ body{
     width : 50%;
   }
 
-  div{
+  > div{
     width: 70%;
   }
 
@@ -141,17 +145,21 @@ a{
   position: relative;
   width: 100%;
   overflow: hidden;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
 }
 
 .carousel-images {
   display: flex;
+  width: 100%;
   transition: transform 0.5s ease-in-out;
 }
 
 .carousel-images img {
   width: 100%;
-  height: auto; /* Maintain aspect ratio */
-  object-fit: cover; /* Ensure images fill the container without distortion */
+  height: auto;
+  flex-shrink: 0;
 }
 
 .carousel-button {
@@ -159,7 +167,9 @@ a{
   top: 50%;
   transform: translateY(-50%);
   background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
   color: white;
+  font-weight: bold;
   border: none;
   cursor: pointer;
   padding: 10px;

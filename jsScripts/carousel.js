@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
         let currentIndex = 0;
 
         function updateCarousel() {
-            imagesContainer.style.transform = `translateX(-${getFinalTranslation(currentIndex)}px)`;
+            imagesContainer.style.transform = `translateX(-${currentIndex * 100}%)`;
         }
 
         nextButton.addEventListener('click', () => {
@@ -20,16 +20,6 @@ document.addEventListener('DOMContentLoaded', () => {
             currentIndex = (currentIndex - 1 + images.length) % images.length;
             updateCarousel();
         });
-
-        function getFinalTranslation(index){
-            let translation = 0;
-            for (let i = 0; i < index; i++) {
-                translation += images[i].clientWidth;
-            }
-            console.log(translation);
-            
-            return translation;
-        }
 
         // Initialize carousel state
         updateCarousel();

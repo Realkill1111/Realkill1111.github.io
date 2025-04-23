@@ -117,6 +117,7 @@ img{
   img{
     width : 30%;
     min-width: 400px;
+    max-height: 500px;
   }
 
   img.wider{
@@ -182,4 +183,8 @@ a{
 
 .carousel-button.next {
   right: 10px;
+}
+
+h1{
+   font-size: xx-large;
 }

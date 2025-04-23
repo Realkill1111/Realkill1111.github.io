@@ -18,6 +18,13 @@ nav *{
 nav a button{
     width: 100%;
     height: 100%;
+    border-bottom: solid;
+    border-color: cyan;
+}
+
+#mainNav a button{
+    border-top: solid;
+    border-color: cyan;
 }
 
 header{
@@ -28,8 +35,15 @@ header{
     background: linear-gradient(to bottom, white, grey);
 }
 
+html{
+    height: 100%;
+}
 body{
     margin: 0;
+    background: linear-gradient(to right, rgb(0, 200, 200), rgb(0, 125, 125), rgb(0, 125, 125), rgb(0, 200, 200));
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
 }
 
 .rotating-wrapper {
@@ -77,4 +91,85 @@ body{
     to {
       transform: rotateY(360deg);
     }
+}
+
+#mainContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.img-p_paragraph{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 5vw;
+  width: 80%;
+  margin: 20px 0;
+
+  img{
+    width : 30%;
+    min-width: 400px;
+  }
+
+  img.wider{
+    width : 50%;
+  }
+
+  div{
+    width: 70%;
+  }
+
+  div.justRight{
+    text-align: right;
+  }
+
+  div.justRight ul {
+    list-style-position: inside;
+    direction: rtl;
+  }
+}
+
+a{
+  color: yellow;
+}
+
+.carousel {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel-images {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-images img {
+  width: 100%;
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Ensure images fill the container without distortion */
+}
+
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  z-index: 10;
+}
+
+.carousel-button.prev {
+  left: 10px;
+}
+
+.carousel-button.next {
+  right: 10px;
 }

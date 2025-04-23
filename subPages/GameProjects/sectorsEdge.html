@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sebastien Morant - Portfolio</title>
+    <link rel="stylesheet" href="/css/mainStyle.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    <script src="/jsScripts/carousel.js"></script>
+</head>
+<header>
+    <h1>MORANT SEBASTIEN</h1>
+    <div class="rotating-wrapper">
+        <div class="rotating-card">
+          <h1 class="side front">Game Designer and Programmer</h1>
+          <h1 class="side back">Junior Front-end Developer</h1>
+        </div>
+    </div>
+    <nav id="mainNav">
+        <a href="/index.html"><button>
+            Home
+        </button></a>
+        <a href="/subPages/BUT.html"><button>
+            Traveaux BUT
+        </button></a>
+        <a href="/subPages/gameMain.html"><button>
+            Projets Jeux Vidéos
+        </button></a>
+        <a href="/subPages/GDD.html"><button>
+            Protos / GDD
+        </button></a>
+    </nav>
+    <nav>
+        <a href="/subPages/GameProjects/sectorsEdge.html"><button>
+            [LD] Sector's Edge
+        </button></a>
+        <a href="/subPages/gameMain.html"><button>
+            [SOLO] Corridor
+        </button></a>
+        <a href="/subPages/gameMain.html"><button>
+            [LD-PROG] Code Game Jam 8
+        </button></a>
+        <a href="/subPages/gameMain.html"><button>
+            [GD-PROG-ART] Tales of a Fool
+        </button></a>
+    </nav>
+</header>
+<body>
+    <section id="mainContent">
+        <h1>Sector's Edge - Level design</h1>
+        <h2>Realisation de multiples cartes + 1 officielle</h2>
+
+        <section class="img-p_paragraph">
+            <img src="/img/rotating random thing.png" alt="essai sur magicavoxel">
+            <div>
+                <h2>Sector's Edge</h2>
+                <p>
+                    Sector's edge est un FPS en multijoueur PVP dans lequel les joueurs naviguents dans des environnements completements destructibles. Developpé par deux frères australiens, le jeu est sorti en Octobre 2020 et a recus de nombreuses mises a jours jusqu'en Decembre 2023 (Bien que des membres de la communauté ont deployé des serveurs et jouent regulierement).
+                    <br><br>
+                    Utilisant un moteur de jeu fait maison, l'aspect creation de carte par les joueurs n'as pu etre possible que grace a un certain groupe de joueurs (dont j'ai fait parti) qui souhaitait ajouter des cartes au jeu. En quelques mois nous sommes arrivés a l'integration du steam workshop faciliant grandement la creation et publication de cartes. 
+                </p>
+            </div>
+        </section>
+        <section class="img-p_paragraph">
+            <div class="justRight">
+                <h2>Comment créer une carte</h2>
+                <p>
+                    Pour Pouvoir créer une carte il nous faut 2 fichiers :<br>
+                    <ul>
+                        <li>Un fichier .json contenant les données techniques de la map</li>
+                        <li>Un fichier .vox contenant un model 3D en voxel de la carte</li>
+                    </ul>
+                    <p>
+                        La premiere etape est de setup un json de base contenant le minimum pour avoir une carte fonctionnelle avec des informations placeholder afin de pouvoir lancer sa carte pendant ses iterations sans se soucier du gameplay. Ensuite, il faut lancer l'application "Magicavoxel" et créer un nouveau projet. Enfin créer une copie du fichier .vox produit par magicavoxel et la placer dans le meme dossier que le json (il est possible de manipuler l'original directement dans le dossier de la carte mais je conseille de garder des copies)
+                    </p>
+                    Multiples guides sont disponibles en ligne ainsi que sur le discord de la communauté.<br>
+                    <a href="https://docs.google.com/document/d/1eieOkvCjgHzkV1yMe823-70mmGBXktdzpM0LAfn4xzM/edit?usp=sharing" target="_blank">Mon guide simple pour utiliser magicavoxel dans le contexte de Sector's Edge</a>
+                </p>
+            </div>
+            <img class="wider" src="/img/Colony_outsideclose.jpg" alt="Vue exterieure rapprochée de Colony">
+        </section>
+        <section class="img-p_paragraph">
+            <div class="carousel">
+                <div class="carousel-images">
+                    <img src="/img/rotating random thing.png" alt="Image 1">
+                    <img src="/img/Colony_outsideclose.jpg" alt="Image 2">
+                    <img src="/img/rotating random thing.png" alt="Image 3">
+                </div>
+                <button class="carousel-button prev">&#10094;</button>
+                <button class="carousel-button next">&#10095;</button>
+            </div>
+            <div>
+                <h2>Shrine - Temple</h2>
+                <p>
+                    
+                </p>
+            </div>
+        </section>
+    </section>
+</body>
+</html>

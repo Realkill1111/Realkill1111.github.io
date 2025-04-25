@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sebastien Morant - Portfolio</title>
+    <link rel="stylesheet" href="/css/mainStyle.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    <script src="/jsScripts/carousel.js"></script>
+    <script src="/jsScripts/spoilerReveal.js"></script>
+</head>
+<header>
+    <h1>MORANT SEBASTIEN</h1>
+    <div class="rotating-wrapper">
+        <div class="rotating-card">
+          <h1 class="side front">Game Designer and Programmer</h1>
+          <h1 class="side back">Junior Front-end Developer</h1>
+        </div>
+    </div>
+    <nav id="mainNav">
+        <a href="/index.html"><button>
+            Home
+        </button></a>
+        <a href="/subPages/BUT.html"><button>
+            Traveaux BUT
+        </button></a>
+        <a href="/subPages/gameMain.html"><button>
+            Projets Jeux Vidéos
+        </button></a>
+        <a href="/subPages/GDD.html"><button>
+            Protos / GDD
+        </button></a>
+    </nav>
+    <nav> 
+        <a href="/subPages/GameProjects/sectorsEdge.html"><button>
+            [LD] Sector's Edge [---]
+        </button></a>
+        <a href="/subPages/GameProjects/Corridor.html"><button>
+            [SOLO] Corridor [Unreal 5]
+        </button></a>
+        <a href="/subPages/GameProjects/CodeGameJam.html"><button>
+            [LD-PROG] Code Game Jam 8 [Unity]
+        </button></a>
+        <a href="/subPages/gameMain.html"><button>
+            [GD-PROG-ART] Tales of a Fool [Unity]
+        </button></a>
+    </nav>
+</header>
+<body>
+    <section id="mainContent">
+        <h1>Corridor - Solo Dev</h1>
+        <h2>Developpement d'un jeu d'horreur sur Unreal Engine 5 avec l'aide de HorrorEngine 3.0</h2>
+
+        <section class="img-p_paragraph">
+            <img src="/img/Corridor/HE logo.jpg" alt="affiche cgj 8">
+            <div>
+                <h2>Horror Engine 3.0</h2>
+                <p>
+                    Horror Engine est un projet sur Unreal Engine 5 qui permet de créer des jeux d'horreur grace a de multiples elements déjà pré-concus en blueprint. De simples ajouts et paramettres sur des acteurs dans l'inspecteur permettent de créer un jeu sans coder (c++ ou blueprint). <br>
+                    Bien sur, il est possiblee de programmer ses propres elements et etendre ceux present.<br>
+                    <br>
+                    Quelques guides sont disponibles sur youtubes, notamment une <a href="https://youtube.com/playlist?list=PLG6j3JQCzpBeDIi-jJvJlWaR26Z6KBpgi&si=dfPnA0A5uw40mcHm">playlist</a> créée par le developpeur du moteur.                    
+                </p>
+            </div>
+        </section>
+        <section class="img-p_paragraph">
+            <img class="wider" src="/img/Corridor/corridor.png" alt="corridor principal premier level">
+            <div>
+                <h2>Corridor</h2>
+                <p>
+                    Corridor est un jeu dans lequel le joueur incarne à chaque chapitre un individu different dans un lieu different chacun ayant perdu une partie de sa memoire. 
+                </p>
+                <button onclick="toggleSpoilerById('spoiler')">Show/Hide Spoiler</button>
+                <p id="spoiler" style="visibility: hidden;">
+                    Chaque individu incarné est en fait un criminel ayant commis un crime (meutre, viol, etc) et se trouve en enfer apres leur mort et sont condamnés a revivre une boucle ou ils se font torturé et tué en fonction de la raison pour laquelle ils sont en enfer.
+                </p>
+                <p>
+                    Actuellement le developpement du jeu est en pause car je travaille sur d'autres projets. Mais il contient un niveau presque complet (remplis de placeholders).
+                </p>
+            </div>
+        </section>
+    </section>
+</body>
+</html>

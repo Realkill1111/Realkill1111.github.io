@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sebastien Morant - Portfolio</title>
+    <link rel="stylesheet" href="/css/mainStyle.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    <script src="/jsScripts/navbar.js"></script>
+    <script src="/jsScripts/carousel.js"></script>
+</head>
+<header>
+    <div id="headerMain">
+        <h1>MORANT SEBASTIEN</h1>
+        <div class="rotating-wrapper">
+            <div class="rotating-card">
+            <h1 class="side front">Game Designer and Programmer</h1>
+            <h1 class="side back">Junior Front-end Developer</h1>
+            </div>
+        </div>
+    </div>
+    <div id="navigation">
+        <nav>
+            <a href="/index.html"><button>
+                Home
+            </button></a>
+            <a href="/subPages/BUT.html"><button>
+                Traveaux BUT
+            </button></a>
+            <a href="/subPages/gameMain.html"><button>
+                Projets Jeux Vidéos
+            </button></a>
+            <a href="/subPages/GDD.html"><button>
+                Protos / GDDs / Others
+            </button></a>
+        </nav>
+        <nav> 
+            <a href="/subPages/GDD.html"><button>
+                Chaos & Mayhem
+            </button></a>
+            <a href="/subPages/GDD.html"><button>
+                C&M MeatGrinder
+            </button></a>
+            <a href="/subPages/GDD.html"><button>
+                Intergalactic Farm Business
+            </button></a>
+            <a href="/subPages/GDD/UnnamedCardGame.html"><button>
+                Unnamed Card Game
+            </button></a>
+        </nav>
+    </div>
+</header>
+<body>
+    <section id="mainContent">
+        <h1>Unnamed Card Game</h1>
+        <h2>Création d'un jeu de carte pendant la pause du Midi</h2>
+
+        <section class="img-p_paragraph">
+            <div class="carousel">
+                <div class="carousel-images">
+                    <img src="/img/CardGame/disposition.png" alt="disposition des cartes">
+                    <img src="/img/CardGame/HowToReadCard.png" alt="composition d'une carte">
+                </div>
+                <button class="carousel-button prev">&#10094;</button>
+                <button class="carousel-button next">&#10095;</button>
+            </div>
+            <div>
+                <h2>Petit temps mort</h2>
+                <p>
+                    Vers la fin de mon stage chez Geomatys en 2024, pendant la pause du midi, alors que je pliais des feuilles cartonnée que j'utilisais pour ecrire mes notes, j'ai eu l'idée de les decouper en 4 pour former des petites cartes. <br>
+                    Ensuite j'ai imaginé un jeu de carte dans la meme lignée que le Uno, avec un deck au centre partagé entre les joueurs. Et j'ai commencé a ecrire des effets simples tels que "Piocher 1 carte" et ajouter des nombres dans les coins allant de 0 à 2. <br>
+                    <br>
+                    Le principe est simple, a chaque tour un joueur doit piocher autant de carte que necessaire pour en avoir 3 dans la main, puis decider d'activer une carte ou de la reclamer (chaque action 1 fois par tour).
+                    <div class="twoSidedList">
+                        <div>
+                            <b>Reclamation</b>
+                            <span>
+                                Reclammer une carte permet au joueur d'obtenir des points en fonction du nombre inscrit dans ses coins superieurs. Pour cela il place la carte face visible devant lui.
+                        </div>
+                        <div>
+                            <b>Activation</b>
+                            <span>
+                                Activer une carte permet au joueur de faire usage de l'effet inscrit sur la carte, apres avoir resolu cet effet la carte est placée au centre de la table, a coté du deck, composant la <b>defause</b>. <br>
+                                Certaines cartes peuvent interragir avec des cartes reclamées.
+                            </span>
+                        </div>
+                    </div>
+                    <br>
+                    Pour gagner il faut etre le premier joueur a obtenir 10 points. Seule les cartes reclamées comptent pour le score, si une carte est retiré des cartes reclamées d'un joueur son score lui est effectivement retiré.
+                </p>
+            </div>
+        </section>
+        <p>
+            Ci dessous le pdf du jeu créé quelques semaines après avec la liste des cartes, il existe 32 cartes totalisant 40 points.
+        </p>
+        <iframe src="/pdfs/Cardgame.pdf" style="width:650px; height:475px; padding-bottom: 50px;" frameborder="0"></iframe>
+    </section>  
+</body>
+</html>

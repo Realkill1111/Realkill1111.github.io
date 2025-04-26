@@ -22,9 +22,20 @@ nav a button{
     border-color: cyan;
 }
 
-#mainNav a button{
-    border-top: solid;
-    border-color: cyan;
+#navigation{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  border-top: solid;
+  border-color: cyan;
+  transition: all 0.3s ease;
+  z-index: 1000;
+}
+#navigation.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
 
 header{
@@ -124,7 +135,7 @@ img{
     width : 50%;
   }
 
-  > div{
+  > div:not(.carousel){
     width: 70%;
   }
 
@@ -144,7 +155,7 @@ a{
 
 .carousel {
   position: relative;
-  width: 100%;
+  width: 50%;
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -161,6 +172,7 @@ a{
   width: 100%;
   height: auto;
   flex-shrink: 0;
+  border-radius: 10px;
 }
 
 .carousel-button {
@@ -187,4 +199,27 @@ a{
 
 h1{
    font-size: xx-large;
+}
+
+.twoSidedList{
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  gap: 10px;
+
+  > div{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 25px;
+
+    > b{
+      width: 25%;
+    }
+
+    > span{
+      width: 100%;
+    }
+    
+  }
 }

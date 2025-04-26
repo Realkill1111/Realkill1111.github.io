@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sebastien Morant - Portfolio</title>
+    <link rel="stylesheet" href="/css/mainStyle.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    <script src="/jsScripts/carousel.js"></script>
+    <script src="/jsScripts/navbar.js"></script>
+    <script src="/jsScripts/spoilerReveal.js"></script>
+</head>
+<header>
+    <div id="headerMain">
+        <h1>MORANT SEBASTIEN</h1>
+        <div class="rotating-wrapper">
+            <div class="rotating-card">
+            <h1 class="side front">Game Designer and Programmer</h1>
+            <h1 class="side back">Junior Front-end Developer</h1>
+            </div>
+        </div>
+    </div>
+    <div id="navigation">
+        <nav>
+            <a href="/index.html"><button>
+                Home
+            </button></a>
+            <a href="/subPages/BUT.html"><button>
+                Traveaux BUT
+            </button></a>
+            <a href="/subPages/gameMain.html"><button>
+                Projets Jeux Vidéos
+            </button></a>
+            <a href="/subPages/GDD.html"><button>
+                Protos / GDD
+            </button></a>
+        </nav>
+        <nav> 
+            <a href="/subPages/GameProjects/sectorsEdge.html"><button>
+                [LD] Sector's Edge [---]
+            </button></a>
+            <a href="/subPages/GameProjects/Corridor.html"><button>
+                [SOLO] Corridor [Unreal 5]
+            </button></a>
+            <a href="/subPages/GameProjects/CodeGameJam.html"><button>
+                [LD-PROG] Code Game Jam 8 [Unity]
+            </button></a>
+            <a href="/subPages/GameProjects/TalesOfAFool.html"><button>
+                [GD-PROG-ART] Tales of a Fool [Unity]
+            </button></a>
+        </nav>
+
+    </div>
+</header>
+<body>
+    <section id="mainContent">
+        <h1>Tales of a Fool - Projet Fin d'Année B2 ICAN LYON</h1>
+        <h2>Developpement d'un jeu d'un roguelike deckbuilder en groupe de 3</h2>
+
+        <section class="img-p_paragraph">
+            <div class="justRight">
+                <h2>Tales Of A Fool</h2>
+                <p>
+                    Tales of a Fool est un jeu sur lequel je travaille en groupe de 3 depuis debut Fervrier 2025. Il s'agit d'un roguelike deckbuilder dans lequel le joueur incarne l'arcane de tarot du Fou dans sa quete de connaissance du monde et de lui meme. Le jeu est inspiré des jeux comme Slay the Spire et Inscryption, le joueur navgigue sur une carte generée aleatoirement a chaque partie et doit choisir le chemin a emprunter n'ayant que les forme des destinations pour se diriger. 
+                    <br><br>
+                    Pendant son exploration il sera ammené a combattre des ennemis en faisant usage de cartes aux effets variées ainsi qu'une carte de tarot (initialement la sienne) lui permettant d'invoquer un sort puissant une fois par combat. Il aura aussi a sa disposition des objets qui augmenteronts certains aspects ou s'activeront automatiquement en reaction aux cartes jouées par le joueur ou son adversaire.            
+                </p>
+                <div class="twoSidedList">
+                    <div>
+                        <b>Sebastien MORANT</b>
+                        <span>[Game Design, Game Programming, Game Art 3D]</span>
+                    </div>
+                    <div>
+                        <b>Florent RAFFIN</b>
+                        <span>[Game Design, Game Art 2D, Game Art 3D]</span>
+                    </div>
+                    <div>
+                        <b>Guillaume BOULAY</b>
+                        <span>[Game Design, Game Art 2D, Game Art 3D, Sound Design]</span>
+                    </div>
+                </div>
+                <p>                    
+                    J'ai personellement utlisé Unity 6 + Visual Studio, et fait de la modelisation 3D sur Blender.
+                </p>
+            </div>
+            <img src="/img/TalesOfAFool/True_Png_fool.png" alt="Dessin de Florent RAFFIN du Protagoniste">
+        </section>
+        <section class="img-p_paragraph">
+            <div class="carousel">
+                <div class="carousel-images">
+                    <img src="/img/TalesOfAFool/LD_DraftMap.png" alt="Map idea design de Florent RAFFIN">
+                    <img src="/img/TalesOfAFool/LD_MapINGAME.png" alt="Map generated currently in game">
+                </div>
+                <button class="carousel-button prev">&#10094;</button>
+                <button class="carousel-button next">&#10095;</button>
+            </div>
+            <div>
+                <h2>Generation de Carte</h2>
+                <p>
+                    La Carte est generé en utilisant un algorithme qui relie les nouvelles dales avec leur precedentes (chaque dale contient un liste de dales qui permet de l'atteindre) separé en 2 chemins qui commencent chacun par un combat et finisent par une fontaine et un Boss.
+                    <br><br>
+                    List des dales :<br>
+                    
+                    <div class="twoSidedList">
+                        <div>
+                            <b>Sac de Carte :</b>
+                            <span>Permet d'obtenir une nouvelle carte ou de la refuser et ameliorer l'une de ses carte</span>
+                        </div>
+                        <div>
+                            <b>Coffre :</b>
+                            <span>Permet d'obtenir un nouvel objet, le joueur doit choisir un objet parmis deux possible</span>
+                        </div>
+                        <div>
+                            <b>Fontaine :</b>
+                            <span>Soigne le joueur d'une portion de sa vie maximale</span>
+                        </div>
+                        <div>
+                            <b>Combats :</b>
+                            <span>Lance un combat contre un sbire, gagner le combat augmente le maximum de vie de 5</span>
+                        </div>
+                        <div>
+                            <b>Boss :</b>
+                            <span>Lance un combat contre un Boss, gagner le combat rapporte une nouvelle carte de tarot</span>
+                        </div>
+                    </div>
+                </p>
+            </div>
+        </section>
+        <section class="img-p_paragraph">
+            <div class="carousel">
+                <div class="carousel-images">
+                    <img src="/img/TalesOfAFool/FightScene.png" alt="Fight scene">
+                    <img src="/img/TalesOfAFool/CardBag.png" alt="Quand le joueur peut obtenir une nouvelle carte">
+                    <img src="/img/TalesOfAFool/ItemChest.png" alt="Choix entre deux objets">
+                    <img src="/img/TalesOfAFool/FightEvent.png" alt="Selection de carte de tarot">
+                </div>
+                <button class="carousel-button prev">&#10094;</button>
+                <button class="carousel-button next">&#10095;</button>
+            </div>
+            <div>
+                <h2>Combats</h2>
+                <p>
+                    Avant meme de commencer un combat le joueur est prevenu de l'identité de son adversaire ainsi que de son maximum de vie, il doit ensuite selectionner une carte de tarot pour l'accompagner pour ce combat. <br>
+                    Un combat se deroule en tour par tour, le joueur commence puis l'adversaire joue et ainsi de suite. Chaque debut de son tour, le joueur pioche autant de carte que necessaire pour en avoir au moins 5 dans sa main et son energie est remplie. Ensuite le joueur peut jouer autant de carte qu'il souhaite tant qu'il possede assez d'energie pour les utiliser (chaque carte a un cout en energie). Une grande partie des cartes infligent des degats, soignent ou donne du bouclier mais certaines infligent aussi des effets de status.
+                    <br><br>
+                    Liste des Effets de status :<br>                    
+                    <div class="twoSidedList">
+                        <div>
+                            <b>Regen :</b>
+                            <span>Quantitatif, à chaque fin de tour de celui qui en possède, l'individu est soigné pour chaque point de <b>Regen</b></span>
+                        </div>
+                        <div>
+                            <b>Poison :</b>
+                            <span>Quantitatif, à chaque debut de tour de celui qui en possède, l'individu subits autant de degats qu'il a de <b>poison</b></span>
+                        </div>
+                        <div>
+                            <b>Brulures :</b>
+                            <span>Quantitatif, à chaque carte jouée par celui qui en possède, l'individu subit autant de degats qu'il a de <b>brulures</b></span>
+                        </div>
+                        <div>
+                            <b>Saignement :</b>
+                            <span>Quantitatif, chaque point de <b>saignement</b> diminue les effet du <b>Regen</b></span>
+                        </div>
+                        <div>
+                            <b>Corps de pierre :</b>
+                            <span>Quantitatif, reduits tous les degats subit pour chaque point de <b>corps de pierre</b></span>
+                        </div>
+                        <div>
+                            <b>Esquive :</b>
+                            <span>Ignore la prochaine instance de degats subit</span>
+                        </div>
+                        <div>
+                            <b>Vulnerable :</b>
+                            <span>La prochaine instance de degats subit ignore les boucliers</span>
+                        </div>
+                    </div>
+                </p>
+            </div>
+        </section>
+        <section class="img-p_paragraph">
+            <div class="carousel">
+                <div class="carousel-images">
+                    <img src="/img/TalesOfAFool/Chaos.png" alt="Chaos ui">
+                    <img src="/img/TalesOfAFool/MagicTome.png" alt="Magic tome ui">
+                </div>
+                <button class="carousel-button prev">&#10094;</button>
+                <button class="carousel-button next">&#10095;</button>
+            </div>
+            <div>
+                <h2>Reliques</h2>
+                <p>
+                    Les reliques sont des objets qui permettent au joueur d'acceder a de nouvelles mecaniques jusqu'a la fin de sa run. <br>
+                    Chaque relique a sa propre mecanique: <br>
+                    Par exemple la relique "Tome Magique" permet au joueur de choisir l'energie qu'il va depenser a chaque fois qu'il joue une carte (multipliant ou divisant leurs effets basé sur le cout original de la carte) <br>
+                    ou la relique "Chaos" qui à chaque tour augmente la puissance d'un effet negatif (poison, brulures, saignement) infligé. 
+                </p>
+            </div>
+        </section>
+    </section>
+</body>
+</html>

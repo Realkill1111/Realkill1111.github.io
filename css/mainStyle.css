@@ -2,6 +2,10 @@
     font-family: "Audiowide", sans-serif;
 }
 
+p{
+  text-align: justify;
+}
+
 nav{
     display: flex;
     align-items: stretch;
@@ -135,17 +139,35 @@ img{
     width : 50%;
   }
 
+  img.narrow{
+    width: 20%;
+  }
+
   > div:not(.carousel){
     width: 70%;
   }
 
-  div.justRight{
+  div.justRight *{
     text-align: right;
   }
 
   div.justRight ul {
     list-style-position: inside;
     direction: rtl;
+  }
+}
+
+.p-p{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 5vw;
+  width: 80%;
+  margin: 20px 0;
+  text-align: justify;
+
+  *{
+    width: 50%;
   }
 }
 

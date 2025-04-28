@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sebastien Morant - Portfolio</title>
+    <link rel="stylesheet" href="/css/mainStyle.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    <script src="/jsScripts/carousel.js"></script>
+    <script src="/jsScripts/spoilerReveal.js"></script>
+    <script src="/jsScripts/navbar.js"></script>
+</head>
+<header>
+    <div id="headerMain">
+        <h1>MORANT SEBASTIEN</h1>
+        <div class="rotating-wrapper">
+            <div class="rotating-card">
+            <h1 class="side front">Game Designer and Programmer</h1>
+            <h1 class="side back">Junior Front-end Developer</h1>
+            </div>
+        </div>
+    </div>
+    <div id="navigation">
+        <nav>
+            <a href="/index.html"><button>
+                Home
+            </button></a>
+            <a href="/subPages/BUT.html"><button>
+                Travaux BUT
+            </button></a>
+            <a href="/subPages/gameMain.html"><button>
+                Projets Jeux Vidéos
+            </button></a>
+            <a href="/subPages/GDD.html"><button>
+                Protos / GDDs / Others
+            </button></a>
+        </nav>
+        <nav> 
+            <a href="/subPages/GameProjects/sectorsEdge.html"><button>
+                [LD] Sector's Edge [---]
+            </button></a>
+            <a href="/subPages/GameProjects/Corridor.html"><button>
+                [SOLO] Corridor [Unreal 5]
+            </button></a>
+            <a href="/subPages/GameProjects/CodeGameJam.html"><button>
+                [LD-PROG] Code Game Jam 8 [Unity]
+            </button></a>
+            <a href="/subPages/GameProjects/TalesOfAFool.html"><button>
+                [GD-PROG-ART] Tales of a Fool [Unity]
+            </button></a>
+            <a href="/subPages/GameProjects/KeepHighwaySafe.html"><button>
+                [GD-PROG] Keep our Highways Safe [Unity]
+            </button></a>
+        </nav>
+
+    </div>
+</header>
+<body>
+    <section id="mainContent">
+        <h1>Keep our Highways Safe</h1>
+        <h2>Developpement d'un jeu sur le theme des transports de marchandise</h2>
+
+        <section class="img-p_paragraph">
+            <img src="/img/KHS/papers-please-review.webp" alt="Papers Please" class="wider">
+            <div>
+                <h2>Une semaine, un partenariat perdu, 2 jours</h2>
+                <p>
+                    Le mardi 22 Avril nous avons debuté une semaine de 4 jours pendant laquelle nous avons du "decouvrir" (pour les autres etudiants pas pour moi) le developpement de site web : html, css, js. Et nous avions appris que le jeudi + vendredi nous devions programmer un site+jeu pour un partenariat. Puis le Jeudi matin nous avons apris que le partenariat prevu n'aura pas lieu et que le sujet avait changé. Nous avions donc du developper un jeu en moins de deux jours afin de le rendre le vendredi vers 15-16h.
+                    <br><br>
+                    Notre sujet a été changer pour un partenariat potentiel avec Confluence Transport, representation du theme de transport de ressources par camion.
+                    <br>
+                    Pour notre jeu nous avons decidé Florent RAFFIN et moi d'aborder l'aspect de la reglementation et des controles et de faire un jeu inspiré par Papers please.
+                </p>
+            </div>
+        </section>
+        <section class="img-p_paragraph">
+            <div class="carousel">
+                <div class="carousel-images">
+                    <img src="/img/KHS/Surveillance.png" alt="Surveillance scene">
+                    <img src="/img/KHS/papaers.png" alt="Inspection">
+                </div>
+                <button class="carousel-button prev">&#10094;</button>
+                <button class="carousel-button next">&#10095;</button>
+            </div>
+            <div >
+                <h2>Keep our Highways Safe</h2>
+                <p>
+                    KoHS est un jeu dans lequel le joueur incarne un agent de police qui doit arreter des camions dont le conducteur peut etre en ett d'ivresse, conduire sur la voie de gauche, exceder la limitation de vitesse ainsi que posseder des papiers non valable/mentir sur leur marchandise.
+                </p>
+                <h3>Le Jeu est divisé en 2 phases</h3>
+                <p>
+                    <b>Surveillance</b><br>
+                    Le joueur est a son poste de travail, devant lui se trouve 3 ecrans :
+                    <ul>
+                        <li>
+                            Grand ecran central sur lequel est transmit une camera qui observe un pan d'autoroute sur lequel circulent des camions et des voitures
+                        </li>
+                        <li>
+                            Ecran secondaire sur lequel est affiché une liste de rapports de police indiquant la presence d'un camion qui enfrein les regles avec la raison + un indice permettant de l'identifier dasn la circulation.
+                        </li>
+                        <li>
+                            Petit ecran qui affiche la cargaison que le camion observé (souris au dessus) <b>dit</b> avoir.
+                        </li>
+                    </ul>
+                    Lorsque le joueur pense trouver un camion qu'il doit arreter il doit simplement cliquer dessus et passer dans la phase d'inspection.
+                </p>
+                <p>
+                    <b>Inspection</b><br>
+                    Lors d'une inspection le joueur doit trouver le probleme sur le camion qu'il inspecte, que ce soit une probleme avec les papiers, un probleme de conduite (par exemple: conduite sous influence) ou une marchandise differente qu'annoncée. 
+                </p>
+            </div>
+        </section>
+    </section>
+</body>
+</html>

@@ -58,15 +58,16 @@
 <body>
     <section id="mainContent">
         <h1>Tales of a Fool - Projet Fin d'Année B2 ICAN LYON</h1>
-        <h2>Developpement d'un jeu d'un roguelike deckbuilder en groupe de 3</h2>
+        <h2>Développement d'un jeu d'un roguelike deckbuilder en groupe de 3</h2>
 
         <section class="img-p_paragraph">
             <div class="justRight">
                 <h2>Tales Of A Fool</h2>
                 <p>
-                    Tales of a Fool est un jeu sur lequel je travaille en groupe de 3 depuis debut Fervrier 2025. Il s'agit d'un roguelike deckbuilder dans lequel le joueur incarne l'arcane de tarot du Fou dans sa quete de connaissance du monde et de lui meme. Le jeu est inspiré des jeux comme Slay the Spire et Inscryption, le joueur navgigue sur une carte generée aleatoirement a chaque partie et doit choisir le chemin a emprunter n'ayant que les forme des destinations pour se diriger. 
-                    <br><br>
-                    Pendant son exploration il sera ammené a combattre des ennemis en faisant usage de cartes aux effets variées ainsi qu'une carte de tarot (initialement la sienne) lui permettant d'invoquer un sort puissant une fois par combat. Il aura aussi a sa disposition des objets qui augmenteronts certains aspects ou s'activeront automatiquement en reaction aux cartes jouées par le joueur ou son adversaire.            
+                    Tales of a Fool est un jeu sur lequel je travaille en groupe de 3 depuis début Fevrier 2025. Il s'agit d'un roguelike deckbuilder dans lequel le joueur incarne l'arcane de tarot du Fou dans sa quête de connaissance du monde et de lui même. Le jeu est inspiré des jeux comme Slay the Spire et Inscryption, le joueur navigue sur une carte générée aléatoirement a chaque partie et doit choisir le chemin à emprunter n'ayant que les forme des destinations pour se diriger. 
+                </p>
+                <p>
+                    Pendant son exploration, il sera amené à combattre des ennemis en faisant usage de cartes aux effets variées ainsi qu'une carte de tarot (initialement la sienne) lui permettant d'invoquer un sort puissant une fois par combat. Il aura aussi à sa disposition des objets qui augmenterons certains aspects ou s'activeront automatiquement en réaction aux cartes jouées par le joueur ou son adversaire.           
                 </p>
                 <div class="twoSidedList">
                     <div>
@@ -83,7 +84,7 @@
                     </div>
                 </div>
                 <p>                    
-                    J'ai personellement utlisé Unity 6 + Visual Studio, et fait de la modelisation 3D sur Blender.
+                    J'ai personnellement utlisé Unity 6 + Visual Studio, et fait de la modélisation 3D sur Blender.
                 </p>
             </div>
             <img src="/img/TalesOfAFool/True_Png_fool.png" alt="Dessin de Florent RAFFIN du Protagoniste">
@@ -98,20 +99,20 @@
                 <button class="carousel-button next">&#10095;</button>
             </div>
             <div>
-                <h2>Generation de Carte</h2>
+                <h2>Génération de Carte</h2>
                 <p>
-                    La Carte est generé en utilisant un algorithme qui relie les nouvelles dales avec leur precedentes (chaque dale contient un liste de dales qui permet de l'atteindre) separé en 2 chemins qui commencent chacun par un combat et finisent par une fontaine et un Boss.
+                    La Carte est générée en utilisant un algorithme qui relie les nouvelles dalles avec leur précédentes (chaque dalle contient une liste de dalles qui permet de l'atteindre) séparé en 2 chemins qui commencent chacun par un combat et finissent par une fontaine et un Boss.
                     <br><br>
-                    List des dales :<br>
+                    List des dalles :<br>
                     
                     <div class="twoSidedList">
                         <div>
                             <b>Sac de Carte :</b>
-                            <span>Permet d'obtenir une nouvelle carte ou de la refuser et ameliorer l'une de ses carte</span>
+                            <span>Permet d'obtenir une nouvelle carte ou de la refuser et améliorer l'une de ses cartes (aléatoirement)</span>
                         </div>
                         <div>
                             <b>Coffre :</b>
-                            <span>Permet d'obtenir un nouvel objet, le joueur doit choisir un objet parmis deux possible</span>
+                            <span>Permet d'obtenir un nouvel objet, le joueur doit choisir un objet parmi deux possibles</span>
                         </div>
                         <div>
                             <b>Fontaine :</b>
@@ -143,41 +144,42 @@
             <div>
                 <h2>Combats</h2>
                 <p>
-                    Avant meme de commencer un combat le joueur est prevenu de l'identité de son adversaire ainsi que de son maximum de vie, il doit ensuite selectionner une carte de tarot pour l'accompagner pour ce combat. <br>
-                    Un combat se deroule en tour par tour, le joueur commence puis l'adversaire joue et ainsi de suite. Chaque debut de son tour, le joueur pioche autant de carte que necessaire pour en avoir au moins 5 dans sa main et son energie est remplie. Ensuite le joueur peut jouer autant de carte qu'il souhaite tant qu'il possede assez d'energie pour les utiliser (chaque carte a un cout en energie). Une grande partie des cartes infligent des degats, soignent ou donne du bouclier mais certaines infligent aussi des effets de status.
-                    <br><br>
-                    Liste des Effets de status :<br>                    
-                    <div class="twoSidedList">
-                        <div>
-                            <b>Regen :</b>
-                            <span>Quantitatif, à chaque fin de tour de celui qui en possède, l'individu est soigné pour chaque point de <b>Regen</b></span>
-                        </div>
-                        <div>
-                            <b>Poison :</b>
-                            <span>Quantitatif, à chaque debut de tour de celui qui en possède, l'individu subits autant de degats qu'il a de <b>poison</b></span>
-                        </div>
-                        <div>
-                            <b>Brulures :</b>
-                            <span>Quantitatif, à chaque carte jouée par celui qui en possède, l'individu subit autant de degats qu'il a de <b>brulures</b></span>
-                        </div>
-                        <div>
-                            <b>Saignement :</b>
-                            <span>Quantitatif, chaque point de <b>saignement</b> diminue les effet du <b>Regen</b></span>
-                        </div>
-                        <div>
-                            <b>Corps de pierre :</b>
-                            <span>Quantitatif, reduits tous les degats subit pour chaque point de <b>corps de pierre</b></span>
-                        </div>
-                        <div>
-                            <b>Esquive :</b>
-                            <span>Ignore la prochaine instance de degats subit</span>
-                        </div>
-                        <div>
-                            <b>Vulnerable :</b>
-                            <span>La prochaine instance de degats subit ignore les boucliers</span>
-                        </div>
-                    </div>
+                    Avant même de commencer un combat, le joueur est prévenu de l'identité de son adversaire ainsi que de son maximum de vie, il doit ensuite sélectionner une carte de tarot pour l'accompagner pour ce combat. 
                 </p>
+                <p>
+                    Un combat se déroule en tour par tour, le joueur commence puis l'adversaire joue et ainsi de suite. Chaque début de son tour, le joueur pioche autant de carte que nécessaire pour en avoir au moins 5 dans sa main et son énergie est remplie. Ensuite, le joueur peut jouer autant de cartes qu'il souhaite tant qu'il possède assez d'énergie pour les utiliser (chaque carte a un coût en énergie). Une grande partie des cartes infligent des dégâts, soignent ou donne du bouclier, mais certaines infligent aussi des effets de statuts.
+                </p>
+                <p><b>Liste des Effets de status :</b></p>
+                <div class="twoSidedList">
+                    <div>
+                        <b>Regen :</b>
+                        <span>Quantitatif, à chaque fin de tour de celui qui en possède, l'individu est soigné pour chaque point de <b>Regen</b></span>
+                    </div>
+                    <div>
+                        <b>Poison :</b>
+                        <span>Quantitatif, à chaque debut de tour de celui qui en possède, l'individu subits autant de degats qu'il a de <b>poison</b></span>
+                    </div>
+                    <div>
+                        <b>Brulures :</b>
+                        <span>Quantitatif, à chaque carte jouée par celui qui en possède, l'individu subit autant de degats qu'il a de <b>brulures</b></span>
+                    </div>
+                    <div>
+                        <b>Saignement :</b>
+                        <span>Quantitatif, chaque point de <b>saignement</b> diminue les effet du <b>Regen</b></span>
+                    </div>
+                    <div>
+                        <b>Corps de pierre :</b>
+                        <span>Quantitatif, reduits tous les degats subit pour chaque point de <b>corps de pierre</b></span>
+                    </div>
+                    <div>
+                        <b>Esquive :</b>
+                        <span>Ignore la prochaine instance de degats subit</span>
+                    </div>
+                    <div>
+                        <b>Vulnerable :</b>
+                        <span>La prochaine instance de degats subit ignore les boucliers</span>
+                    </div>
+                </div>
             </div>
         </section>
         <section class="img-p_paragraph">
@@ -192,11 +194,18 @@
             <div>
                 <h2>Reliques</h2>
                 <p>
-                    Les reliques sont des objets qui permettent au joueur d'acceder a de nouvelles mecaniques jusqu'a la fin de sa run. <br>
-                    Chaque relique a sa propre mecanique: <br>
-                    Par exemple la relique "Tome Magique" permet au joueur de choisir l'energie qu'il va depenser a chaque fois qu'il joue une carte (multipliant ou divisant leurs effets basé sur le cout original de la carte) <br>
-                    ou la relique "Chaos" qui à chaque tour augmente la puissance d'un effet negatif (poison, brulures, saignement) infligé. 
+                    Les reliques sont des objets qui permettent au joueur d'accéder a de nouvelles mécaniques jusqu'à la fin de sa run. <br>
+                    Chaque relique a sa propre mécanique:  
                 </p>
+                <ul>
+                    <li>
+                        Par exemple, la relique "Tome Magique" permet au joueur de choisir l'énergie qu'il va dépenser à chaque fois qu'il joue une carte. (multipliant ou divisant leurs effets basé sur le coût original de la carte) 
+                    </li>
+                    <br>
+                    <li>
+                        Ou la relique "Chaos" qui a chaque tour augmente la puissance d'un effet négatif (poison, brûlures, saignement) infligé.
+                    </li>
+                </ul>
             </div>
         </section>
     </section>

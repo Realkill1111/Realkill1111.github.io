@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="/css/mainStyle.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
     <script src="/jsScripts/navbar.js"></script>
+    <script src="/jsScripts/carousel.js"></script>
 </head>
 <header>
     <div id="headerMain">
@@ -33,13 +34,50 @@
                 Protos / GDDs / Others
             </button></a>
         </nav>
-        <nav>
-        </nav>
-
     </div>
 </header>
 <body>
-    
-    
+    <section id="mainContent">
+        <h1>Projets realisé lors de ma formation à L'IUT</h1>
+
+        <h2>Stage Geomatys</h2>
+        <section class="img-p_paragraph">
+            <div class="carousel">
+                <div class="carousel-images">
+                    <img src="/img/BUT/DinamisCatalogueFinal.png" alt="Dinamis Catalogue Final">
+                    <img src="/img/BUT/DinamisCatalogueOrigin.png" alt="Dinamis Catalogue Original">
+                </div>
+                <button class="carousel-button prev">&#10094;</button>
+                <button class="carousel-button next">&#10095;</button>
+            </div>
+            <div>
+                <h2>Front-end Web avec Angular</h2>
+                <p>Interface et fonctionnalités pour un site de cartographie satellite</p>
+                <p>
+                    Lors de mon stage, ma mission principale a été de reprendre un site web Angular dont la quasi-totalité des fonctionnalités était soit non fonctionnelle ou non présente. Cela provenait du fait que l'intégralité du back-end du site n'était pas le même que celui de la version originale du client. <br>
+                    Ma progression sur ce projet peut être divisée en plusieurs étapes:
+                </p>
+                <ul>
+                    <li>Réintroduire et améliorer les fonctionnalités principales</li>
+                    <li>Ajout de fonctionnalités principales/de support</li>
+                    <li>Refonte graphique</li>
+                </ul>
+            </div>
+        </section>
+        <h2>Devoirs Cours</h2>
+        <section class="img-p_paragraph">
+            <img src="/img/BUT/remakediagramEA.png" alt="diagrame ea base de donnée" class="wider">
+            <div>
+                <h2>FullStack : site web de partage de recettes de cocktails</h2>
+                <p>
+                    Développement d'un site web en groupe de 2 permettant aux utilisateurs de consulter une liste de recettes de cocktails. Utilisation de Looping pour designer la base de données, Vuejs pour le front et java pour le back-end.
+                </p>
+                <p style="font-size: small;">
+                    N'ayant plus accès au gitlab de l'IUT, je n'ai pas d'images du site à vous montrer. <br>
+                    Image : remake de la partie la plus importante de la base de données sur Looping (l'originale était plus avancés avec des types d'utilisateurs et autres colonnes)
+                </p>
+            </div>
+        </section>
+    </section>
 </body>
 </html>
